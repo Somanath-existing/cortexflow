@@ -59,9 +59,9 @@ jobs:
         run: |
           pytest backend/tests/ -v --tb=short || true
 
-  # ── 2. Build & Push to Docker Hub (Parallel Matrix) ────────────────────────
+  # ── 2. Build & Push to Docker Hub ─────────────────────────────────────────
   docker-hub:
-    name: Build & Push (${{ matrix.name }})
+    name: Build & Push (${{ matrix.tag }})
     needs: test
     runs-on: ubuntu-latest
     if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
@@ -70,36 +70,31 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - name: backend
+          - tag: backend
             context: ./backend
             dockerfile: ./backend/Dockerfile
-            image: cortexflow-backend
 
-          - name: frontend
+          - tag: frontend
             context: ./frontend
             dockerfile: ./frontend/Dockerfile
-            image: cortexflow-frontend
 
-          - name: mcp-database
+          - tag: mcp-database
             context: ./mcp-servers/database
             dockerfile: ./mcp-servers/database/Dockerfile
-            image: cortexflow-mcp-database
 
-          - name: mcp-knowledge
+          - tag: knowledge
             context: ./mcp-servers/knowledge
             dockerfile: ./mcp-servers/knowledge/Dockerfile
-            image: cortexflow-mcp-knowledge
 
-          - name: mcp-analytics
+          - tag: analytics
             context: ./mcp-servers/analytics
             dockerfile: ./mcp-servers/analytics/Dockerfile
-            image: cortexflow-mcp-analytics
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up QEMU (multi-arch support)
+      - name: Set up QEMU (multi-architecture)
         uses: docker/setup-qemu-action@v3
 
       - name: Set up Docker Buildx
@@ -111,23 +106,17 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Extract Docker metadata (tags, labels)
-        id: meta
-        uses: docker/metadata-action@v5
-        with:
-          images: ${{ secrets.DOCKERHUB_USERNAME }}/${{ matrix.image }}
-          tags: |
-            type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' }}
-            type=sha,format=short,prefix=sha-
-            type=ref,event=tag
-
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
           context: ${{ matrix.context }}
           file: ${{ matrix.dockerfile }}
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: |
+            ${{ secrets.DOCKERHUB_USERNAME }}/cortexflow:${{ matrix.tag }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/cortexflow:${{ matrix.tag }}-latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/cortexflow:${{ matrix.tag }}-${{ github.sha }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/cortexflow-${{ matrix.tag }}:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/cortexflow-${{ matrix.tag }}:${{ github.sha }}
           cache-from: type=gha
           cache-to: type=gha,mode=max

@@ -75,7 +75,7 @@ services:
   # ─── MCP Servers (Pulled from Docker Hub) ───────────────────────────────────
 
   mcp-database:
-    image: ${DOCKERHUB_USERNAME:-cortexflow}/cortexflow-mcp-database:latest
+    image: ${DOCKERHUB_USERNAME:-somanathks}/cortexflow:mcp-database
     container_name: cortexflow-mcp-database
     restart: unless-stopped
     ports:
@@ -93,7 +93,7 @@ services:
       start_period: 15s
 
   mcp-knowledge:
-    image: ${DOCKERHUB_USERNAME:-cortexflow}/cortexflow-mcp-knowledge:latest
+    image: ${DOCKERHUB_USERNAME:-somanathks}/cortexflow:knowledge
     container_name: cortexflow-mcp-knowledge
     restart: unless-stopped
     ports:
@@ -114,7 +114,7 @@ services:
       start_period: 60s
 
   mcp-analytics:
-    image: ${DOCKERHUB_USERNAME:-cortexflow}/cortexflow-mcp-analytics:latest
+    image: ${DOCKERHUB_USERNAME:-somanathks}/cortexflow:analytics
     container_name: cortexflow-mcp-analytics
     restart: unless-stopped
     ports:
@@ -129,7 +129,7 @@ services:
   # ─── Backend (Pulled from Docker Hub) ───────────────────────────────────────
 
   backend:
-    image: ${DOCKERHUB_USERNAME:-cortexflow}/cortexflow-backend:latest
+    image: ${DOCKERHUB_USERNAME:-somanathks}/cortexflow:backend
     container_name: cortexflow-backend
     restart: unless-stopped
     ports:
@@ -166,7 +166,7 @@ services:
   # ─── Frontend (Pulled from Docker Hub) ──────────────────────────────────────
 
   frontend:
-    image: ${DOCKERHUB_USERNAME:-cortexflow}/cortexflow-frontend:latest
+    image: ${DOCKERHUB_USERNAME:-somanathks}/cortexflow:frontend
     container_name: cortexflow-frontend
     restart: unless-stopped
     ports:
