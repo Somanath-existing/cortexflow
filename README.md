@@ -236,18 +236,43 @@ Tests cover: SQL guard (SELECT-only), graph router logic, agent state shape, chu
 
 ---
 
-## AWS Deployment
+---
+
+## CI/CD & Docker Hub Automation
+
+This repository includes automated CI/CD via GitHub Actions ([`.github/workflows/deploy.yml`](file:///.github/workflows/deploy.yml)) that builds and pushes multi-service container images to Docker Hub on every push to `main`.
+
+### 1. Setup GitHub Repository & Secrets
+
+1. Create a repository on GitHub (e.g. `cortexflow`).
+2. Add your GitHub remote:
+   ```bash
+   git remote add origin https://github.com/<your-github-username>/cortexflow.git
+   git branch -M main
+   git push -u origin main
+   ```
+3. In your GitHub repository settings, navigate to **Settings > Secrets and variables > Actions** and add:
+   - `DOCKERHUB_USERNAME`: Your Docker Hub username
+   - `DOCKERHUB_TOKEN`: Your Docker Hub Personal Access Token (PAT created from Docker Hub > Account Settings > Security)
+
+### 2. Automated Docker Hub Repositories
+
+On every push to `main`, GitHub Actions automatically builds and pushes:
+- `<DOCKERHUB_USERNAME>/cortexflow-backend:latest`
+- `<DOCKERHUB_USERNAME>/cortexflow-frontend:latest`
+- `<DOCKERHUB_USERNAME>/cortexflow-mcp-database:latest`
+- `<DOCKERHUB_USERNAME>/cortexflow-mcp-knowledge:latest`
+- `<DOCKERHUB_USERNAME>/cortexflow-mcp-analytics:latest`
+
+*(Docker Hub will automatically create these repositories under your account on the first push!)*
+
+### 3. Running from Docker Hub Images
+
+To deploy CortexFlow on any machine using the pre-built Docker Hub images:
 
 ```bash
-cd infra/terraform
-terraform init
-terraform apply \
-  -var="db_password=your_password" \
-  -var="groq_api_key=gsk_..." \
-  -var="aws_region=ap-south-1"
+DOCKERHUB_USERNAME=<your-username> docker compose -f docker-compose.hub.yml up -d
 ```
-
-Then push images via the GitHub Actions pipeline (see `.github/workflows/deploy.yml`).
 
 ---
 
