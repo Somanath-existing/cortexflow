@@ -1,0 +1,83 @@
+SALES ESCALATION AND DEAL REVIEW POLICY
+CortexFlow Enterprise — Sales Operations Division
+Version 3.0 | Effective: March 2024
+==========================================
+
+PURPOSE
+-------
+This policy governs when and how sales opportunities, at-risk accounts, and revenue performance issues must be escalated within the organization. It ensures timely executive visibility and intervention when needed.
+
+SCOPE
+-----
+Applies to all Account Managers, Regional Sales Managers, CSMs, and Sales Leadership across all South India territories including Kerala, Karnataka, Tamil Nadu, Telangana, and Andhra Pradesh.
+
+ESCALATION THRESHOLDS
+---------------------
+
+1. OPPORTUNITY ESCALATION (upward deal support)
+   Escalate to Regional Sales Manager when:
+   - Single deal value exceeds INR 5,00,000
+   - Customer is requesting multi-year pricing not in the standard rate card
+   - Competitive situation where a competitor has submitted a formal proposal
+   - Customer's procurement committee includes C-level decision-makers
+
+   Escalate to VP of Sales when:
+   - Single deal value exceeds INR 25,00,000
+   - Strategic partnership or OEM/reseller discussions begin
+   - Government or PSU procurement (different compliance requirements)
+
+2. REVENUE DECLINE ESCALATION (territory under-performance)
+   Escalate to Regional Sales Manager when:
+   - Territory revenue declines more than 10% quarter-over-quarter
+   - A single account's revenue drops more than 25% in a quarter
+   - Two or more accounts in the same territory show simultaneous decline
+
+   CURRENTLY TRIGGERED: Kerala territory — Q3 2024 decline of 16.8% YoY requires
+   immediate Regional Sales Manager review and documented action plan.
+
+   Escalate to VP of Sales when:
+   - Territory revenue declines more than 20% quarter-over-quarter
+   - Decline persists for two or more consecutive quarters
+
+   CURRENTLY TRIGGERED: Kerala Electronics decline trend (Q1→Q2→Q3 2024) requires
+   VP of Sales review and strategic intervention plan.
+
+3. CUSTOMER HEALTH ESCALATION (churn risk)
+   See Customer Churn Prevention Policy v2.1 for full escalation matrix.
+   Quick reference:
+   - MEDIUM risk (CHS 50-74): RSM notified within 5 days
+   - HIGH risk (CHS 0-49): VP of Sales notified within 24 hours
+
+DEAL REVIEW CADENCE
+-------------------
+Weekly:
+  - Deals above INR 2,00,000 reviewed in Regional Pipeline Review call
+  - HIGH churn risk accounts reviewed — mandatory attendance by RSM
+
+Monthly:
+  - Full territory business review (TBR) with RSM + all AMs
+  - Customer health dashboard reviewed for all accounts
+  - Competitive win/loss analysis presented
+
+Quarterly:
+  - Executive Business Review (EBR) with VP of Sales
+  - QBRs offered to all LOW risk customers with >INR 10,00,000 annual revenue
+  - Territory performance vs. plan — corrective action required if >15% below target
+
+DOCUMENTATION REQUIREMENTS
+---------------------------
+All escalations must be logged in the CRM within 24 hours with:
+1. Account/opportunity name
+2. Escalation reason (specific policy trigger)
+3. Current status and risk assessment
+4. Proposed action plan with owners and timelines
+5. Expected resolution date
+
+APPROVAL AUTHORITY TABLE
+------------------------
+Discount up to 5%:          Account Manager (self-approval)
+Discount 6-10%:             Regional Sales Manager
+Discount 11-15%:            VP of Sales
+Discount above 15%:         CEO approval required
+Extended payment >Net-60:   CFO sign-off required
+Retention offers (policy):  Regional Sales Manager

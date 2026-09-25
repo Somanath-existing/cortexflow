@@ -1,0 +1,30 @@
+Regional Pricing Policy v2.3
+Effective: January 1, 2024
+
+Standard Pricing:
+Standard pricing applies uniformly across all regions in India.
+All prices are exclusive of GST (18% applicable on hardware, 18% on software).
+
+Discount Authority:
+Regional discounts may be approved by the Regional VP for strategic situations:
+- Orders above INR 10L: up to 5% discount (Regional Manager approval)
+- Strategic accounts: up to 10% discount (Regional VP approval)
+- Competitive situations: up to 15% discount (Country Head approval)
+- Government/Education: up to 20% discount (Country Head + CFO approval)
+
+No discount exceeding 15% may be offered without written CFO approval.
+
+Competitive Response Policy:
+When a competitor offers pricing more than 10% below our list price,
+sales representatives should escalate to their Regional VP within 48 hours.
+A competitive pricing response may be authorized for up to 3 months
+while the competitive threat is assessed.
+
+Payment Terms:
+Standard payment terms are Net-30 from invoice date.
+For new customers, advance payment of 30% is required before shipment.
+Enterprise accounts with 12+ months history may request Net-45.
+
+Price Protection:
+Customers who have placed a purchase order at a quoted price are
+protected from price increases for 60 days from the order date.

@@ -1,0 +1,75 @@
+SOUTH INDIA REGIONAL PERFORMANCE SUMMARY
+CortexFlow Business Intelligence | Full Year Analysis through Q3 2024
+======================================================================
+
+OVERVIEW
+--------
+This report summarises revenue performance across all South India territories for the period Q1 2024 through Q3 2024, with year-over-year comparisons against 2023.
+
+South India accounts for 68% of our total India revenue and is the company's most important geographic segment. Three states are tracked: Kerala, Karnataka, and Tamil Nadu.
+
+REGIONAL SCORECARD — Q3 2024
+-----------------------------
+
+Kerala:
+  Total Revenue Q3 2024:    INR 4,95,000
+  Total Revenue Q3 2023:    INR 5,95,000
+  Year-over-Year Change:    -16.8% DECLINE
+  Key Customers:            Kochi Tech Solutions, Trivandrum Enterprises, Calicut Systems
+  Churn Risk Level:         HIGH — immediate intervention required
+
+Karnataka:
+  Total Revenue Q3 2024:    INR 7,33,000
+  Total Revenue Q3 2023:    INR 6,54,000
+  Year-over-Year Change:    +12.1% GROWTH
+  Key Customers:            Bangalore Software Co, Mysore Technologies
+  Churn Risk Level:         LOW — accounts healthy and expanding
+
+Tamil Nadu:
+  Total Revenue Q3 2024:    INR 2,95,000
+  Total Revenue Q3 2023:    INR 2,80,000
+  Year-over-Year Change:    +5.4% GROWTH
+  Key Customers:            Chennai Innovations
+  Churn Risk Level:         LOW
+
+TOTAL SOUTH INDIA:
+  Q3 2024: INR 15,23,000
+  Q3 2023: INR 15,29,000
+  Net Change: -0.4% (flat, masked by Kerala decline offsetting Karnataka/Tamil Nadu growth)
+
+PRODUCT CATEGORY BREAKDOWN (ALL SOUTH INDIA)
+--------------------------------------------
+Electronics:
+  Q3 2023: INR 9,90,000  |  Q3 2024: INR 9,61,000  |  Change: -2.9%
+
+Software:
+  Q3 2023: INR 4,54,000  |  Q3 2024: INR 5,01,000  |  Change: +10.4%
+
+Networking:
+  Q3 2023: INR 85,000    |  Q3 2024: INR 61,000    |  Change: -28.2%
+
+KEY TREND: Software subscriptions are growing strongly across all territories, while electronics hardware sales are under pressure — particularly in Kerala. This aligns with the broader industry shift from CapEx (hardware) to OpEx (subscriptions) spending models.
+
+FULL-YEAR KERALA TREND
+-----------------------
+Kerala Electronics Revenue by Quarter:
+  Q4 2023: INR 3,80,000 (seasonal peak — year-end budget spending)
+  Q1 2024: INR 3,20,000 (expected seasonal dip, then recovery)
+  Q2 2024: INR 2,75,000 (CONCERN — decline continued into Q2)
+  Q3 2024: INR 2,45,000 (CRITICAL — decline accelerating)
+
+The Kerala decline started in Q1 2024 and has consistently worsened each quarter. This is not a one-quarter anomaly.
+
+STRATEGIC PRIORITIES
+--------------------
+1. DEFEND: Prevent further revenue erosion in Kerala through urgent customer success intervention
+2. GROW: Accelerate Karnataka momentum — particularly Cloud Platform and Analytics Platform
+3. EXPAND: Tamil Nadu is underserved relative to its market size — opportunity to add 2-3 new accounts
+4. PRODUCT: Promote software subscriptions across all territories as alternative to hardware
+
+RISK REGISTER
+-------------
+HIGH RISK: Kochi Tech Solutions (KOCHI001) — health score 52, HIGH churn, declining trend
+HIGH RISK: Trivandrum Enterprises (TVM001) — health score 48.5, HIGH churn, last order 67 days ago
+MEDIUM RISK: Calicut Systems (CLT001) — health score 61, MEDIUM churn, flat trend
+LOW RISK: Hyderabad Systems (HYD001) — health score 65, MEDIUM churn, monitoring

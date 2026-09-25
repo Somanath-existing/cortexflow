@@ -1,0 +1,48 @@
+KERALA REGION Q3 2024 REVENUE ANALYSIS REPORT
+CortexFlow Business Intelligence | September 2024
+=====================================================
+
+EXECUTIVE SUMMARY
+-----------------
+Kerala region experienced a significant revenue decline in Q3 2024 compared to Q3 2023 across all product categories. Total regional revenue dropped from INR 5,95,000 in Q3 2023 to INR 4,95,000 in Q3 2024, representing a 16.8% year-over-year decline.
+
+KEY FINDINGS
+------------
+1. Electronics Category: Revenue fell from INR 3,12,000 (Q3 2023) to INR 2,45,000 (Q3 2024) — a decline of 21.5%. This is the most significant drop and the primary driver of the overall regional shortfall.
+
+2. Software Category: Revenue declined marginally from INR 1,98,000 to INR 1,89,000 — a 4.5% drop, indicating some resilience in recurring subscription revenues.
+
+3. Networking Category: Revenue fell from INR 85,000 to INR 61,000 — a steep 28.2% decline, suggesting reduced infrastructure investment by customers.
+
+ROOT CAUSE ANALYSIS
+-------------------
+Primary Factors:
+- Kochi Tech Solutions (KOCHI001): This anchor customer, historically our largest Kerala account, reduced order volume by approximately 66% in Q3 2024. Their last order of INR 2,50,000 (July 2024) was less than half their Q3 2023 average. Health score dropped to 52.0 (HIGH churn risk).
+- Trivandrum Enterprises (TVM001): Similarly downtrending with health score 48.5 and HIGH churn risk. Last order placed 67 days ago.
+- Calicut Systems (CLT001): MEDIUM churn risk, revenue trend classified as FLAT.
+
+Market Conditions:
+- Local government IT procurement budgets reduced by 15-20% due to state fiscal consolidation.
+- Increased competition from Bengaluru-based competitors offering aggressive pricing on enterprise hardware.
+- Post-monsoon period typically sees reduced construction and infrastructure activity, which indirectly affects networking product demand.
+
+QUARTERLY TREND
+---------------
+Kerala Electronics Revenue (INR):
+- Q1 2024: 3,20,000 (growth from Q4 2023)
+- Q2 2024: 2,75,000 (declining trend begins)
+- Q3 2024: 2,45,000 (continued decline)
+- Q4 2023: 3,80,000 (peak quarter)
+
+This data indicates the decline began in Q2 2024, not suddenly in Q3. The trend is worsening.
+
+COMPETITIVE CONTEXT
+-------------------
+Karnataka region (our strongest performing region) grew 5.8% in Electronics and 21.9% in Software during the same Q3 period. This contrast suggests that the Kerala decline is not due to product issues but rather regional market and customer-specific factors.
+
+RECOMMENDATIONS
+---------------
+1. IMMEDIATE: Assign a dedicated account manager to Kochi Tech Solutions and Trivandrum Enterprises within 2 weeks.
+2. SHORT-TERM: Offer a structured payment plan or financing option for Enterprise Server purchases to reduce upfront cost barriers.
+3. MEDIUM-TERM: Explore partnership with Kerala Startup Mission (KSUM) to access new technology buyers in the ecosystem.
+4. PRICING REVIEW: Benchmark Electronics prices against Bengaluru competitors — consider a 5-8% regional discount program for Kerala.

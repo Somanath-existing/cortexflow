@@ -1,0 +1,70 @@
+KARNATAKA REGION MARKET GROWTH REPORT
+CortexFlow Business Intelligence | Q3 2024 Market Analysis
+===========================================================
+
+EXECUTIVE SUMMARY
+-----------------
+Karnataka region delivered strong growth in Q3 2024, bucking the regional trend seen in Kerala. Total Karnataka revenue grew from INR 6,54,000 in Q3 2023 to INR 7,33,000 in Q3 2024 — a 12.1% year-over-year increase. The region is now our top-performing South India territory.
+
+REVENUE PERFORMANCE
+-------------------
+Electronics Category:
+- Q3 2023: INR 3,98,000 (1,990 units)
+- Q3 2024: INR 4,21,000 (2,105 units)
+- Growth: +5.8% revenue, +5.8% units sold
+
+Software Category:
+- Q3 2023: INR 2,56,000 (1,280 units)
+- Q3 2024: INR 3,12,000 (1,560 units)
+- Growth: +21.9% revenue — strongest performing segment
+
+KEY ACCOUNTS
+------------
+1. Bangalore Software Co (BLR001):
+   - Health score: 88.5 (LOW churn risk)
+   - Revenue trend: GROWING
+   - Last order: 12 days ago
+   - Q3 2024 order value: INR 4,45,000 — their highest single quarter on record
+   - Primary products: Enterprise Server Pro, Cloud Platform (per seat)
+
+2. Mysore Technologies (MYS001):
+   - Health score: 79.0 (LOW churn risk)
+   - Revenue trend: STABLE
+   - Last order: 22 days ago
+   - Q3 2024 order value: INR 2,35,000
+   - Expanding into Analytics Platform subscriptions
+
+GROWTH DRIVERS
+--------------
+1. Bengaluru Tech Ecosystem: The city's startup and enterprise tech boom continues to drive hardware and software procurement. Karnataka has over 12,000 active tech companies — our highest density territory.
+
+2. Government Digital India Push: Karnataka's IT/BT Policy 2020-2025 includes significant cloud migration mandates for state departments, creating new software subscription opportunities.
+
+3. Cloud Platform Adoption: Cloud Platform subscriptions in Karnataka grew 22% in Q3 2024, driven by BLR001's expansion and three new mid-market accounts in the pipeline.
+
+4. Proactive Account Management: Karnataka's dedicated account manager ran two in-person business reviews in Q3, directly contributing to the BLR001 expansion order.
+
+PRODUCT MIX ANALYSIS
+--------------------
+- Enterprise Server Pro: Steady demand, especially from Mysore Technologies for on-premise infrastructure
+- Cloud Platform: Fastest growing product in Karnataka — 22% unit growth
+- Analytics Platform: New adoption by MYS001 starting Q3 2024
+- Security Suite: Stable recurring subscription revenue from both accounts
+
+COMPARISON WITH KERALA
+----------------------
+The contrast between Karnataka (growing) and Kerala (declining) is stark:
+
+| Metric                  | Kerala Q3 2024 | Karnataka Q3 2024 |
+|-------------------------|---------------|-------------------|
+| Total Revenue           | INR 4,95,000  | INR 7,33,000      |
+| YoY Change              | -16.8%        | +12.1%            |
+| Average Customer Health | 53.8          | 83.8              |
+| Churn Risk (avg)        | HIGH          | LOW               |
+
+RECOMMENDATIONS
+---------------
+1. Apply Karnataka account management model to Kerala — structured quarterly business reviews and expansion planning.
+2. Replicate Cloud Platform upsell motion from Karnataka into Kerala accounts.
+3. Consider transferring Karnataka account manager for one month to mentor Kerala team.
+4. Explore Mysore-Trivandrum route for joint customer events to share success stories.

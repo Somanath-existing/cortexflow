@@ -1,0 +1,35 @@
+South India Market Analysis — 2024
+
+Market Overview:
+South India represents 23% of total company revenue.
+Karnataka is performing well with 5.8% Electronics growth and 21.9% Software growth.
+Kerala experienced a 16.8% overall revenue decline in Q3 2024.
+Tamil Nadu remained stable with approximately 5% growth.
+
+Revenue by State (Q3 2024, all categories combined):
+- Karnataka: INR 73.3L (+5.8% YoY)
+- Tamil Nadu: INR 29.5L (+5.4% YoY)
+- Kerala: INR 49.5L (-16.8% YoY)
+- Telangana: INR 38.2L (+3.1% YoY)
+
+Competitive Landscape in Kerala:
+LocalTech Solutions entered Kerala in Q2 2024. They have focused on commodity
+hardware and are building relationships with mid-market customers. Their pricing
+strategy of 15-20% below market is likely unsustainable long-term, but they
+are gaining short-term traction. We have not seen them target software or SaaS.
+
+IT Sector Slowdown Impact:
+The broader IT sector slowdown in India during Q2-Q3 2024 affected enterprise
+spending across verticals. Kerala's IT sector, concentrated in Kochi and
+Trivandrum, was particularly affected due to its exposure to global delivery
+projects that saw budget cuts from US and European clients.
+
+Customer Segmentation:
+Enterprise (>INR 5L annual revenue): 3 accounts in Kerala — all showing decline.
+Mid-market (INR 1-5L annual revenue): 5 accounts — mixed performance.
+SMB (<INR 1L annual revenue): 12 accounts — relatively stable.
+
+Growth Opportunities:
+1. SaaS transition: Kerala's IT workforce is highly skilled and cloud-ready.
+2. Government projects: Kerala state IT mission has budget for digital infrastructure.
+3. Education sector: Several engineering colleges are expanding IT infrastructure.

@@ -1,0 +1,95 @@
+SOFTWARE PLATFORM PORTFOLIO — PRODUCT OVERVIEW
+CortexFlow Product Documentation | Software Division
+Version 2.5 | Updated: September 2024
+=================================================
+
+OVERVIEW
+--------
+CortexFlow offers three enterprise SaaS platforms delivered as monthly per-seat subscriptions. These products are growing rapidly, particularly in Karnataka, and represent the fastest-growing revenue segment across South India.
+
+All software products include:
+- 99.9% uptime SLA
+- Data residency in India (Mumbai data center)
+- 24x7 phone and email support
+- Unlimited users for on-boarding during trial period
+- Integration with Enterprise Server Pro for hybrid deployments
+
+==================================================
+PRODUCT 1: CLOUD PLATFORM
+==================================================
+Price: INR 15,000 per seat per month
+Category: Software / Cloud Infrastructure
+Product Code: CP-SEAT-2024
+
+Description:
+The Cloud Platform provides managed private cloud infrastructure, enabling organizations to run their workloads in a fully managed, secure environment without capital expenditure on servers.
+
+Key Features:
+- Managed Kubernetes clusters (1-500 nodes)
+- Private networking with dedicated VPC per customer
+- Automated backups (hourly/daily/weekly)
+- Compliance certifications: ISO 27001, SOC 2 Type II, GDPR-ready
+- Integration with Enterprise Server Pro for hybrid bursting
+
+Target Customers: Companies moving from on-premise to cloud, or running hybrid workloads.
+
+Sales Performance:
+- Karnataka (BLR001): Adopted in Q2 2024, expanding from 5 to 15 seats in Q3 2024 — INR 2,25,000/month recurring revenue
+- Trivandrum Enterprises (TVM001): Purchased 10 seats per month in August 2023 — INR 1,65,000 contribution in Q3 2023
+
+Upsell Opportunity: Kerala accounts currently without Cloud Platform subscriptions = INR 90,000/month potential MRR.
+
+==================================================
+PRODUCT 2: SECURITY SUITE
+==================================================
+Price: INR 8,000 per seat per month
+Category: Software / Cybersecurity
+Product Code: SS-SEAT-2024
+
+Description:
+Enterprise-grade endpoint protection, SIEM, and compliance management. Designed for organizations that must meet regulatory requirements (RBI, SEBI, HIPAA, PCI-DSS).
+
+Key Features:
+- AI-powered threat detection (99.7% malware detection rate in independent testing)
+- SIEM dashboard with real-time alerting
+- Compliance reporting for RBI IT Framework, DPDPA 2023
+- Automated vulnerability scanning (weekly)
+- Incident response playbooks included
+
+Target Customers: Banks, NBFC, healthcare, and manufacturing companies under regulatory oversight.
+
+Sales Performance: Steady recurring revenue from all active accounts. Low churn historically — once deployed, Security Suite has a 94% annual renewal rate.
+
+==================================================
+PRODUCT 3: ANALYTICS PLATFORM
+==================================================
+Price: INR 25,000 per seat per month
+Category: Software / Business Intelligence
+Product Code: AP-SEAT-2024
+
+Description:
+The Analytics Platform is our premium BI and data intelligence suite. It provides self-service analytics, real-time dashboards, predictive analytics powered by AI, and automated reporting for business stakeholders.
+
+Key Features:
+- Connect to 200+ data sources (PostgreSQL, Oracle, SAP, Salesforce, and more)
+- AI-powered natural language queries (ask questions in English, get charts and insights)
+- Automated anomaly detection (detect revenue drops, stock-outs, quality issues)
+- Scheduled reports delivered to email/WhatsApp/Slack
+- Role-based access control (executive/manager/analyst tiers)
+
+Target Customers: Companies with significant data volumes that need to derive actionable insights quickly.
+
+Sales Performance:
+- Mysore Technologies (MYS001) adopted in Q3 2024 — 3 seats INR 75,000/month
+- Strong pipeline in Hyderabad and Chennai accounts
+
+Upsell Opportunity: Analytics Platform is our highest-margin product. Target: every customer with >5 Cloud Platform seats should be pitched Analytics Platform.
+
+==================================================
+SUBSCRIPTION MANAGEMENT
+==================================================
+- All subscriptions are billed monthly on the 1st
+- Annual pre-payment offers 10% discount (requires Finance approval)
+- Multi-product bundle discount: 3rd product onwards at 15% off (VP Sales approval)
+- Trial period: 30 days free for new accounts (max 3 seats)
+- Cancellation: 30-day notice required; no pro-rata refund for partial months

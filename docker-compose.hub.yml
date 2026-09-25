@@ -1,0 +1,186 @@
+services:
+  # ─── Data Stores ────────────────────────────────────────────────────────────
+
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: cortexflow-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-cortexflow}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-cortexflow_dev}
+      POSTGRES_DB: ${POSTGRES_DB:-cortexflow}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./data/seed/northwind.sql:/docker-entrypoint-initdb.d/01_northwind.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cortexflow -d cortexflow"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+
+  neo4j:
+    image: neo4j:5.15
+    container_name: cortexflow-neo4j
+    restart: unless-stopped
+    environment:
+      NEO4J_AUTH: ${NEO4J_USER:-neo4j}/${NEO4J_PASSWORD:-cortexflow_dev}
+      NEO4J_PLUGINS: '["apoc"]'
+      NEO4J_dbms_memory_heap_initial__size: 256m
+      NEO4J_dbms_memory_heap_max__size: 512m
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - neo4j_data:/data
+    healthcheck:
+      test: ["CMD-SHELL", "wget -O /dev/null -q http://localhost:7474 || exit 1"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+      start_period: 30s
+
+  qdrant:
+    image: qdrant/qdrant:v1.9.0
+    container_name: cortexflow-qdrant
+    restart: unless-stopped
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - qdrant_data:/qdrant/storage
+    healthcheck:
+      test: ["CMD-SHELL", "bash -c ': >/dev/tcp/127.0.0.1/6333' || exit 1"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 5s
+
+  redis:
+    image: redis:7-alpine
+    container_name: cortexflow-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  # ─── MCP Servers (Pulled from Docker Hub) ───────────────────────────────────
+
+  mcp-database:
+    image: ${DOCKERHUB_USERNAME:-cortexflow}/cortexflow-mcp-database:latest
+    container_name: cortexflow-mcp-database
+    restart: unless-stopped
+    ports:
+      - "8001:8001"
+    environment:
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-cortexflow}:${POSTGRES_PASSWORD:-cortexflow_dev}@postgres:5432/${POSTGRES_DB:-cortexflow}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8001/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+
+  mcp-knowledge:
+    image: ${DOCKERHUB_USERNAME:-cortexflow}/cortexflow-mcp-knowledge:latest
+    container_name: cortexflow-mcp-knowledge
+    restart: unless-stopped
+    ports:
+      - "8002:8002"
+    environment:
+      - QDRANT_URL=http://qdrant:6333
+      - DOCUMENTS_PATH=/documents
+    volumes:
+      - ./data/documents:/documents
+    depends_on:
+      qdrant:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8002/health')"]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+
+  mcp-analytics:
+    image: ${DOCKERHUB_USERNAME:-cortexflow}/cortexflow-mcp-analytics:latest
+    container_name: cortexflow-mcp-analytics
+    restart: unless-stopped
+    ports:
+      - "8003:8003"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8003/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  # ─── Backend (Pulled from Docker Hub) ───────────────────────────────────────
+
+  backend:
+    image: ${DOCKERHUB_USERNAME:-cortexflow}/cortexflow-backend:latest
+    container_name: cortexflow-backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-cortexflow}:${POSTGRES_PASSWORD:-cortexflow_dev}@postgres:5432/${POSTGRES_DB:-cortexflow}
+      - NEO4J_URL=bolt://neo4j:7687
+      - NEO4J_USER=${NEO4J_USER:-neo4j}
+      - NEO4J_PASSWORD=${NEO4J_PASSWORD:-cortexflow_dev}
+      - QDRANT_URL=http://qdrant:6333
+      - REDIS_URL=redis://redis:6379
+      - MCP_DATABASE_URL=http://mcp-database:8001
+      - MCP_KNOWLEDGE_URL=http://mcp-knowledge:8002
+      - MCP_ANALYTICS_URL=http://mcp-analytics:8003
+      - PYTHONPATH=/app
+    env_file:
+      - .env
+    depends_on:
+      postgres:
+        condition: service_healthy
+      qdrant:
+        condition: service_healthy
+      mcp-database:
+        condition: service_healthy
+    volumes:
+      - ./data/documents:/app/documents
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+  # ─── Frontend (Pulled from Docker Hub) ──────────────────────────────────────
+
+  frontend:
+    image: ${DOCKERHUB_USERNAME:-cortexflow}/cortexflow-frontend:latest
+    container_name: cortexflow-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+      - NEXT_PUBLIC_WS_URL=ws://localhost:8000
+      - HOSTNAME=0.0.0.0
+    depends_on:
+      backend:
+        condition: service_healthy
+
+volumes:
+  postgres_data:
+  neo4j_data:
+  qdrant_data:
+  redis_data:

@@ -1,0 +1,73 @@
+ENTERPRISE SERVER PRO — PRODUCT OVERVIEW & SPECIFICATIONS
+CortexFlow Product Documentation | Hardware Division
+Version 4.2 | Updated: August 2024
+====================================================
+
+PRODUCT SUMMARY
+---------------
+The Enterprise Server Pro is our flagship on-premise compute solution designed for mid-to-large enterprise customers with demanding workloads. It is the top-selling hardware product in our South India portfolio.
+
+List Price: INR 2,50,000 per unit (ex-GST)
+Category: Electronics / Enterprise Hardware
+Product Code: ESP-4U-2024
+
+TARGET CUSTOMERS
+----------------
+- Enterprise accounts (>500 employees) requiring on-premise compute
+- Government and PSU organizations with data residency requirements
+- Financial institutions, healthcare providers, and manufacturing companies
+- IT/ITES companies running high-performance workloads
+
+KEY SPECIFICATIONS
+------------------
+Processor:      Dual Intel Xeon Gold 6348 (28 cores each, 56 cores total)
+Memory:         512GB DDR4 ECC RAM (expandable to 2TB)
+Storage:        4x 3.84TB NVMe SSD (15.36TB total, RAID 10)
+Network:        4x 25GbE + 2x 10GbE management
+Power:          Dual redundant 1600W PSU (80 Plus Titanium)
+Form Factor:    4U Rack Mount
+Warranty:       3-year on-site next business day
+Operating Temp: 10°C to 35°C
+
+USE CASES
+---------
+1. Virtualization Host: Supports up to 200 VMs with VMware ESXi or Hyper-V
+2. Database Server: Optimized for Oracle, SQL Server, and PostgreSQL high-availability clusters
+3. AI/ML Inference: GPU expansion slots support NVIDIA A100/H100 (sold separately)
+4. ERP Hosting: Certified for SAP HANA, Oracle ERP Cloud on-premise deployments
+
+SALES PERFORMANCE (South India)
+--------------------------------
+Q3 2023 Units Sold: ~6-8 units (based on INR 3,12,000 Kerala + INR 3,98,000 Karnataka revenue)
+Q3 2024 Units Sold: ~5-7 units (decline in Kerala, growth in Karnataka)
+
+Key purchasers in our database:
+- Kochi Tech Solutions purchased 3 units in July 2023 (INR 7,50,000)
+- Bangalore Software Co consistently purchases 1-2 units per quarter
+
+COMPETITIVE POSITIONING
+-----------------------
+Key competitors: Dell PowerEdge R750, HPE ProLiant DL380, Lenovo ThinkSystem SR650
+
+Our advantages:
+- Local service: On-site engineers in Kochi, Bangalore, Chennai (4-hour SLA)
+- Financing: 12-24 month EMI options available (min order INR 2,00,000)
+- Training: Free 2-day administrator certification included
+- Integration: Pre-configured with our Software Platform for rapid deployment
+
+COMMON OBJECTIONS & RESPONSES
+------------------------------
+Objection: "Too expensive compared to cloud"
+Response: TCO analysis shows on-premise is 30-40% cheaper over 5 years for sustained workloads above 70% utilization.
+
+Objection: "Competitors offer similar specs at lower price"
+Response: Our 4-hour on-site SLA and local Tamil/Malayalam/Kannada language support is unique in South India.
+
+Objection: "We're moving to cloud"
+Response: Hybrid strategy — Server Pro works with our Cloud Platform for burst workloads while keeping sensitive data on-premise.
+
+RECENTLY LAUNCHED UPDATES (Q3 2024)
+------------------------------------
+- New GPU expansion kit for AI inference workloads (INR 85,000 add-on)
+- Remote management portal integration with our Cloud Platform
+- Reduced minimum order from 2 units to 1 unit for trial deployments

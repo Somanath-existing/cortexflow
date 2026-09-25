@@ -1,0 +1,85 @@
+CUSTOMER CHURN PREVENTION POLICY
+CortexFlow Enterprise — Customer Success Division
+Version 2.1 | Effective: January 2024
+=========================================
+
+PURPOSE
+-------
+This policy defines the mandatory actions, escalation paths, and intervention protocols for customers identified as HIGH or MEDIUM churn risk. All Account Managers and Customer Success Managers (CSMs) are required to follow this policy without exception.
+
+CHURN RISK CLASSIFICATION
+--------------------------
+Customers are classified by the Customer Health Score (CHS) system:
+
+LOW Risk (CHS 75-100):
+  - Standard quarterly check-in
+  - Annual business review
+  - No escalation required
+
+MEDIUM Risk (CHS 50-74):
+  - Monthly check-in required
+  - Executive Sponsor Briefing within 30 days
+  - Offer product training and adoption assistance
+  - Flag to Regional Sales Manager within 5 business days
+
+HIGH Risk (CHS 0-49):
+  - IMMEDIATE intervention — within 48 hours of classification
+  - Weekly calls minimum
+  - C-level executive engagement from our side
+  - Custom retention offer (see Retention Offer Policy v1.4)
+  - Escalate to VP of Sales within 24 hours
+  - Mandatory account war room within 1 week
+
+MANDATORY INTERVENTION TRIGGERS
+---------------------------------
+The following events AUTOMATICALLY trigger a HIGH risk re-classification regardless of CHS score:
+1. No order placed in the past 60 days (for accounts with historical monthly ordering)
+2. Revenue trend classified as DECLINING for two or more consecutive quarters
+3. Any direct complaint or negative NPS score below 5
+4. Key stakeholder departure at the customer organization (e.g., IT Director leaves)
+5. Customer opens a support ticket describing vendor evaluation or RFP process
+
+CURRENTLY HIGH RISK ACCOUNTS (as of Q3 2024)
+----------------------------------------------
+The following accounts are classified HIGH churn risk and require immediate attention:
+
+1. Kochi Tech Solutions (KOCHI001)
+   - Health Score: 52.0
+   - Last order: 45 days ago
+   - Revenue trend: DECLINING
+   - Required action: Executive call within 48 hours
+   - Assigned CSM: [To be assigned — ESCALATE NOW]
+
+2. Trivandrum Enterprises (TVM001)
+   - Health Score: 48.5
+   - Last order: 67 days ago — CRITICAL (exceeds 60-day trigger)
+   - Revenue trend: DECLINING
+   - Required action: Emergency in-person visit + retention offer
+   - Assigned CSM: [To be assigned — ESCALATE NOW]
+
+RETENTION OFFER FRAMEWORK
+--------------------------
+Approved retention offers (requires Regional Sales Manager approval):
+- Extended payment terms: Net-60 instead of Net-30 (up to 1 year)
+- Hardware trade-in program: Up to 15% credit on new purchase
+- Software bundle discount: 10-15% off annual subscription for 2-year commitment
+- Dedicated support tier: Upgrade to Priority Support at no charge for 6 months
+- On-site deployment assistance: Complimentary for orders above INR 2,00,000
+
+Offers above these thresholds require VP of Sales approval.
+
+ESCALATION MATRIX
+-----------------
+Day 0:    Account Manager identifies at-risk signal
+Day 1:    CSM conducts discovery call, documents findings in CRM
+Day 2:    Regional Sales Manager briefed, war room scheduled
+Day 5:    War room meeting — define retention strategy
+Day 7:    First retention touchpoint with customer
+Day 14:   Follow-up call — assess response to intervention
+Day 21:   Decision point — continue intervention or prepare for churn
+
+MEASUREMENT & ACCOUNTABILITY
+-----------------------------
+- All HIGH risk accounts must be reviewed in the weekly Regional Pipeline Review
+- CSMs are measured on 90-day churn rate reduction as part of their OKRs
+- Any account that churns without a documented intervention plan triggers an internal post-mortem

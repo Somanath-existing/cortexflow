@@ -1,0 +1,52 @@
+Electronics & Software Product Catalog 2024
+
+Category: Enterprise Hardware
+Enterprise Server Pro
+  Price: INR 2,50,000
+  Specs: 2x Intel Xeon, 256GB RAM, 10TB NVMe RAID
+  Warranty: 3 years on-site
+
+Workstation Elite
+  Price: INR 85,000
+  Specs: Intel Core i9, 64GB RAM, 2TB SSD, NVIDIA RTX 4070
+  Warranty: 2 years carry-in
+
+Network Switch 48-Port
+  Price: INR 45,000
+  Specs: 48x 1GbE + 4x 10GbE uplinks, PoE+, managed
+  Warranty: Lifetime hardware warranty
+
+UPS 3KVA
+  Price: INR 32,000
+  Specs: 3KVA/2.7KW, 6-8 hours battery backup, pure sine wave
+  Warranty: 2 years
+
+Category: SaaS Solutions (Growing 34% YoY Industry-Wide)
+
+Cloud Management Platform
+  Price: INR 15,000 per seat per month
+  Features: Multi-cloud management, cost optimization, compliance reporting
+  Minimum: 5 seats, annual contract
+
+Security Suite
+  Price: INR 8,000 per seat per month
+  Features: EDR, SIEM integration, threat intelligence, SOC dashboard
+  Minimum: 10 seats, annual contract
+
+Analytics Platform
+  Price: INR 25,000 per seat per month
+  Features: BI dashboards, ML models, data connectors (50+), real-time alerts
+  Minimum: 3 seats, annual contract
+
+Category: Networking
+
+Fiber Optic Cable 100m (single-mode)
+  Price: INR 12,000 per 100m
+  Specs: OS2 9/125µm, SC/APC connectors, outdoor rated
+
+Category: Services
+
+Implementation Services
+  On-site setup and configuration: INR 8,000 per day
+  Remote support: INR 3,500 per hour
+  Annual maintenance contract: 10% of product value per year
